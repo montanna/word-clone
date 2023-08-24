@@ -11,6 +11,7 @@ function Banner({guesses, answer}) {
             guesses[guesses.length - 1] === answer ? "You win! Got it in " + guesses.length + " guesses." : "Sorry, the correct answer is " + answer
           }
         </h1>
+        <button onClick={()=>{window.location.reload();}}>Play again?</button>
       </div> 
       : ''
     }
